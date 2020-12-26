@@ -1,6 +1,7 @@
 def call(String dockerImage, String dockerfile) {
   script {
     // docker.build "${dockerImage}"
-    docker.build("${dockerImage}", "-f ${dockerfile} ./dockerfiles")
+    sleep 120
+    docker.build("${dockerImage}", "-f  ./dockerfiles/${dockerfile}")
   }
 }
