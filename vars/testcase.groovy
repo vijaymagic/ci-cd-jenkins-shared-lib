@@ -1,6 +1,6 @@
 def call() {
     sh """
         echo "Testing the docker built image"
-        sleep 120
+        sleep 60
     """
 }
